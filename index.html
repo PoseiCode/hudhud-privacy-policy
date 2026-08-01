@@ -33,14 +33,16 @@
 <body>
 
 <h1>hüdhüd Gizlilik Politikası</h1>
-<p class="updated">Son güncelleme: 27 Temmuz 2026</p>
+<p class="updated">Son güncelleme: 1 Ağustos 2026</p>
 
 <p>hüdhüd, Türkçe konuşan Müslümanlar için hazırlanmış bir İslami öğrenme uygulamasıdır. Bu sayfa
 hangi verilerin işlendiğini ve çok daha uzun bir liste olan hangilerinin işlenmediğini anlatır.</p>
 
 <div class="ozet">
 <p><strong>Kısaca:</strong> hesap yok, sunucumuz yok. Öğrenme verileriniz telefonunuzdan çıkmaz.
-Yalnızca abone olursanız, ödemeyi doğrulamak için isminizle eşleşmeyen bir abonelik kaydı oluşur.</p>
+Yalnızca abone olursanız, ödemeyi doğrulamak için isminizle eşleşmeyen bir abonelik kaydı oluşur.
+Bir de uygulama çökerse, sorunu bulup düzeltebilmemiz için kimliğinizle eşleşmeyen teknik bir hata
+raporu gönderilir.</p>
 </div>
 
 <h2>Cihazınızda kalanlar</h2>
@@ -64,10 +66,35 @@ yönetim servisi üzerinden yürür. Bu sırada şunlar işlenir:</p>
 bilgi hiç yoktur. Kart bilgileriniz bize hiç ulaşmaz; tahsilatın tamamı Apple'ın kendi
 altyapısında yapılır.</p>
 
+<h2>Uygulama çökerse ne oluyor</h2>
+<p>Uygulama beklenmedik şekilde kapanırsa ya da bir ekran hata verirse, sorunu görebilmemiz için
+<strong>Sentry</strong> adlı hata takip servisine teknik bir rapor gönderilir. Amacı tek bir
+şeydir: arızayı bulup düzeltmek. Gönderilenler şunlardır:</p>
+<ul>
+  <li>Hatanın kendisi ve teknik yığın izi (kodun neresinde oluştuğu)</li>
+  <li>Cihaz modeli, işletim sistemi sürümü ve uygulama sürümü</li>
+  <li>Hatadan hemen önce uygulamanın ne yaptığına dair kısa teknik iz</li>
+  <li>Rastgele üretilen bir olay numarası</li>
+</ul>
+<p>Gönderilmeyenler, ki asıl önemlisi bunlar:</p>
+<ul>
+  <li><strong>IP adresiniz.</strong> Sentry tarafında maskeleme açıktır, adresiniz saklanmaz.</li>
+  <li><strong>Ekran görüntüsü, ekran kaydı ya da ekrandaki içerik.</strong> Bu özelliklerin hepsi
+      kapalıdır.</li>
+  <li>Kimliğiniz. Zaten hesap yok; rapora hiçbir kullanıcı kimliği eklenmez.</li>
+  <li>Ders içeriğiniz, cevaplarınız, ilerlemeniz ve istatistikleriniz.</li>
+  <li>Uygulama içindeki gezinme ve dokunma hareketleriniz. Davranış ya da performans izleme
+      yapılmaz; yalnızca hata anı raporlanır.</li>
+</ul>
+<p>Bu raporlar ABD'de işlenir. Ayrıntı için aşağıdaki Haklarınız bölümüne bakın.</p>
+
 <h2>Toplamadıklarımız</h2>
 <ul>
-  <li>Reklam, analitik ya da izleme (tracking) yazılımı kullanılmaz. Uygulama içinde tek bir reklam
-      göstermiyoruz.</li>
+  <li>Reklam yazılımı ve izleme (tracking) yazılımı kullanılmaz. Uygulama içinde tek bir reklam
+      göstermiyoruz. Sizi başka uygulamalarda ya da sitelerde takip eden hiçbir teknoloji yoktur.</li>
+  <li>Kullanım analitiği (hangi ekranda ne kadar kaldığınız, neye kaç kez dokunduğunuz gibi)
+      toplanmaz. Uygulamada yalnızca yukarıda anlatılan hata raporlaması vardır ve o da yalnızca
+      bir arıza olduğunda çalışır.</li>
   <li>Konum, kamera, mikrofon, kişi listesi ve fotoğraf izni istenmez.</li>
   <li>İstenen tek izin bildirimdir, o da tamamen size bağlıdır: yalnızca günlük hatırlatmayı
       açarsanız sorulur. Hatırlatma telefonunuzda kurulur ve orada kalır; bizim size uzaktan
@@ -82,6 +109,8 @@ altyapısında yapılır.</p>
       <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
   <li><strong>Apple App Store</strong> (ödeme ve faturalama):
       <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+  <li><strong>Sentry</strong> (yalnızca hata ve çökme raporu):
+      <a href="https://sentry.io/privacy/">sentry.io/privacy</a></li>
 </ul>
 
 <h2>Çocuklar</h2>
@@ -94,6 +123,10 @@ veri toplamayız. Abonelik kaydı, satın almayı yapan yetişkinin Apple hesab�
 silinmesini isteme hakkınız vardır. Öğrenme verileriniz zaten yalnızca sizin cihazınızda olduğu için
 silme işlemini uygulamayı kaldırarak kendiniz yapabilirsiniz. Abonelik kaydınızın silinmesini
 istiyorsanız aşağıdaki adrese yazın, sizin adınıza sildirelim.</p>
+<p><strong>Verilerin yurt dışına aktarılması.</strong> Şirketimiz ABD'de kuruludur; abonelik
+kayıtları (RevenueCat) ve hata raporları (Sentry) ABD'deki sunucularda işlenir. Bu iki kayıt da
+kimliğinizle eşleşmez ve IP adresiniz saklanmaz. Öğrenme verileriniz hiçbir zaman cihazınızdan
+çıkmaz, dolayısıyla yurt dışına aktarılan bir öğrenme veriniz yoktur.</p>
 
 <h2>Bu politika değişirse</h2>
 <p>İleride bir değişiklik olursa (örneğin bulut yedekleme ya da gerçek kullanıcılarla sosyal bir
