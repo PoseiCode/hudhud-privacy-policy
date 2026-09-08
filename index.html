@@ -42,7 +42,8 @@ hangi verilerin işlendiğini ve çok daha uzun bir liste olan hangilerinin işl
 <p><strong>Kısaca:</strong> hesap yok, sunucumuz yok. Öğrenme verileriniz telefonunuzdan çıkmaz.
 Yalnızca abone olursanız, ödemeyi doğrulamak için isminizle eşleşmeyen bir abonelik kaydı oluşur.
 Bir de uygulama çökerse, sorunu bulup düzeltebilmemiz için kimliğinizle eşleşmeyen teknik bir hata
-raporu gönderilir.</p>
+raporu gönderilir. Uygulamayı her açtığınızda yeni bir sürüm var mı diye kısa bir soru gider, o
+soruyla da öğrenme verileriniz gitmez.</p>
 </div>
 
 <h2>Cihazınızda kalanlar</h2>
@@ -88,13 +89,33 @@ altyapısında yapılır.</p>
 </ul>
 <p>Bu raporlar ABD'de işlenir. Ayrıntı için aşağıdaki Haklarınız bölümüne bakın.</p>
 
+<h2>Yeni sürüm kontrolü</h2>
+<p>Uygulamayı her açtığınızda, elimizde daha yeni bir sürüm olup olmadığını sormak için
+<strong>Expo</strong> adlı güncelleme servisine kısa bir istek gider. Amacı yine tek bir şeydir:
+bir hatayı düzelttiğimizde düzeltmenin size çabuk ulaşması. Bu istekle gidenler şunlardır:</p>
+<ul>
+  <li>Cihazınızın işletim sistemi (iOS ya da Android)</li>
+  <li>Uygulamanın hangi güncellemeleri alabileceğini gösteren teknik sürüm kimliği ve izlediği
+      güncelleme kanalı</li>
+  <li>O an yüklü olan güncellemenin numarası, daha önce yüklenemeyen bir güncelleme olduysa
+      onunki de</li>
+  <li>Kurulumunuza rastgele verilmiş, adınızla ya da kimliğinizle eşleşmeyen bir numara</li>
+  <li>Uygulama bir önceki açılışta çöktüyse o hatanın kısa teknik metni</li>
+  <li>Her internet isteğinde olduğu gibi telefonunuzun o anki IP adresi</li>
+</ul>
+<p>Gitmeyenler: ilerlemeniz, ders geçmişiniz, cevaplarınız, istatistikleriniz ve tercihleriniz.
+Öğrenme verileriniz bu soruyla da cihazınızdan çıkmaz. Bu soruyu sizi ya da kullanımınızı ölçmek
+için kullanmıyoruz; tek işi yeni bir sürüm olup olmadığını öğrenmektir.</p>
+<p>Bu istekler de ABD'de işlenir; ayrıntı için aşağıdaki Haklarınız bölümüne bakın.</p>
+
 <h2>Toplamadıklarımız</h2>
 <ul>
   <li>Reklam yazılımı ve izleme (tracking) yazılımı kullanılmaz. Uygulama içinde tek bir reklam
       göstermiyoruz. Sizi başka uygulamalarda ya da sitelerde takip eden hiçbir teknoloji yoktur.</li>
   <li>Kullanım analitiği (hangi ekranda ne kadar kaldığınız, neye kaç kez dokunduğunuz gibi)
-      toplanmaz. Uygulamada yalnızca yukarıda anlatılan hata raporlaması vardır ve o da yalnızca
-      bir arıza olduğunda çalışır.</li>
+      toplanmaz. Uygulamada davranışınızı ölçen hiçbir şey yoktur: yukarıda anlatılan hata raporu
+      yalnızca bir arıza olduğunda çalışır, yeni sürüm kontrolü ise yalnızca güncelleme olup
+      olmadığını sorar.</li>
   <li>Konum, kamera, mikrofon, kişi listesi ve fotoğraf izni istenmez.</li>
   <li>İstenen tek izin bildirimdir, o da tamamen size bağlıdır: yalnızca günlük hatırlatmayı
       açarsanız sorulur. Hatırlatma telefonunuzda kurulur ve orada kalır; bizim size uzaktan
@@ -111,11 +132,15 @@ altyapısında yapılır.</p>
       <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
   <li><strong>Sentry</strong> (yalnızca hata ve çökme raporu):
       <a href="https://sentry.io/privacy/">sentry.io/privacy</a></li>
+  <li><strong>Expo</strong> (uygulama güncellemelerinin dağıtımı ve yeni sürüm kontrolü):
+      <a href="https://expo.dev/privacy">expo.dev/privacy</a></li>
 </ul>
-<p>Bu üç servise verilerinizi yalnızca yukarıda sayılan işler için aktarıyoruz ve üçünün de bu
-sayfadakiyle aynı ya da eşdeğer bir koruma sağlamasını şart koşuyoruz. Sözleşmelerimiz gereği
-hiçbiri bu verileri kendi amaçları için, reklam için ya da profilleme için kullanamaz.
-Verilerinizi buradan başka hiçbir tarafa satmıyor, kiralamıyor ve aktarmıyoruz.</p>
+<p>Bu dört servise verilerinizi yalnızca yukarıda sayılan işler için aktarıyoruz ve dördünün de bu
+sayfadakiyle aynı ya da eşdeğer bir koruma sağlamasını şart koşuyoruz. Abonelik ve hata raporu
+tarafındaki üç servisle yaptığımız sözleşmeler gereği bu veriler onların kendi amaçları için,
+reklam için ya da profilleme için kullanılamaz. Yeni sürüm kontrolünde Expo'ya ulaşan teknik
+bilgiler ise Expo'nun kendi gizlilik politikasına tabidir. Verilerinizi buradan başka hiçbir
+tarafa satmıyor, kiralamıyor ve aktarmıyoruz.</p>
 
 <h2>Verileri ne kadar süre saklıyoruz</h2>
 <ul>
@@ -127,6 +152,9 @@ Verilerinizi buradan başka hiçbir tarafa satmıyor, kiralamıyor ve aktarmıyo
   <li><strong>Hata ve çökme raporları (Sentry):</strong> <strong>30 gün</strong> sonra otomatik
       olarak silinir; bu raporlar zaten kimliğinizle eşleşmez ve IP adresiniz hiç saklanmaz.
       Sentry'nin yedekleri de en geç 90 gün içinde silinir.</li>
+  <li><strong>Yeni sürüm kontrolü kayıtları (Expo):</strong> Expo bu istekleri kendi gizlilik
+      politikasına göre saklıyor ve belirli bir süre açıklamıyor; doğrulayamadığımız bir sayıyı
+      buraya yazmıyoruz. Bu kayıtlarda ne adınız ne de öğrenme verileriniz vardır.</li>
 </ul>
 <p>Rızanızı geri çekmek ya da silme talep etmek için tek yapmanız gereken aşağıdaki adrese
 yazmaktır; hatırlatma bildirimlerini ise telefonunuzun ayarlarından ya da uygulama içinden
@@ -147,6 +175,9 @@ kaynaktan veri toplamıyoruz.</p>
   <li><strong>Hata ve çökme raporu</strong> yalnız uygulama beklenmedik şekilde kapandığında,
       otomatik olarak gönderilir. Sebebi uygulamanın çalışır ve güvenli kalmasındaki meşru
       menfaattir.</li>
+  <li><strong>Yeni sürüm kontrolü</strong> uygulamayı her açtığınızda otomatik olarak yapılır.
+      Sebebi hata raporundakiyle aynıdır: uygulamanın çalışır ve güvenli kalmasındaki meşru
+      menfaat.</li>
   <li><strong>Bildirim izni</strong> yalnız günlük hatırlatmayı siz açarsanız istenir ve dayanağı
       açık rızanızdır; istediğiniz an geri çekebilirsiniz.</li>
 </ul>
@@ -167,9 +198,11 @@ silinmesini isteme hakkınız vardır. Öğrenme verileriniz zaten yalnızca siz
 silme işlemini uygulamayı kaldırarak kendiniz yapabilirsiniz. Abonelik kaydınızın silinmesini
 istiyorsanız aşağıdaki adrese yazın, sizin adınıza sildirelim.</p>
 <p><strong>Verilerin yurt dışına aktarılması.</strong> Şirketimiz ABD'de kuruludur; abonelik
-kayıtları (RevenueCat) ve hata raporları (Sentry) ABD'deki sunucularda işlenir. Bu iki kayıt da
-kimliğinizle eşleşmez ve IP adresiniz saklanmaz. Öğrenme verileriniz hiçbir zaman cihazınızdan
-çıkmaz, dolayısıyla yurt dışına aktarılan bir öğrenme veriniz yoktur.</p>
+kayıtları (RevenueCat), hata raporları (Sentry) ve yeni sürüm kontrolü istekleri (Expo) ABD'deki
+sunucularda işlenir. Bu kayıtların hiçbiri kimliğinizle eşleşmez. Hata raporlarında IP adresiniz
+saklanmaz; yeni sürüm kontrolünde ise her internet isteğinde olduğu gibi IP adresiniz karşı tarafa
+ulaşır. Öğrenme verileriniz hiçbir zaman cihazınızdan çıkmaz, dolayısıyla yurt dışına aktarılan bir
+öğrenme veriniz yoktur.</p>
 
 <h2>Bu politika değişirse</h2>
 <p>İleride bir değişiklik olursa (örneğin bulut yedekleme ya da sosyal bir özellik eklenirse) bu
